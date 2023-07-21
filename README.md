@@ -10,9 +10,8 @@ To make it easy for you to get started, here's a list of recommended next steps.
 ### Clone project
 ```
 git clone https://github.com/Uroboric/pdf_parser_task.git
-
-### Preliminarily install zbar library
 ```
+### Preliminarily install zbar library
 ### Install dependencies
 ```
 pip install -r requirements.txt
