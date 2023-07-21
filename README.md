@@ -1,4 +1,4 @@
-# PDF Parser + tests(Pytest)
+# PDF Parser + Tests(Pytest)
 <p align="center">
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--I3ObjKUU--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/82ljfvkp9q34w3uqhsx5.png" width="100%" height="auto" alt="Docker Logo">
 </p>
