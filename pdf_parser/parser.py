@@ -5,7 +5,7 @@ import tempfile
 
 
 class PDFParser:
-    pdf_file_path = 'pdf_file/test_task.pdf'
+    pdf_file_path = '/home/runner/work/pdf_parser_task/pdf_parser_task/pdf_file/test_task.pdf'
 
     def __init__(self, file_path):
         self.file_path = file_path
