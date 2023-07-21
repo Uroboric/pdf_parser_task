@@ -5,7 +5,7 @@ import tempfile
 
 
 class PDFParser:
-    pdf_file_path = 'pdf_file/test_task.pdf'
+    pdf_file_path = 'https://github.com/Uroboric/pdf_parser_task/blob/9d9d06bccad9b4efa5423ea9185525d4a8358883/pdf_file/test_task.pdf'
 
     def __init__(self, file_path):
         self.file_path = file_path

@@ -29,7 +29,7 @@ class TestParser:
 
     @pytest.fixture
     def pdf_page(self):
-        with pdfplumber.open("pdf_file/test_task.pdf") as pdf:
+        with pdfplumber.open("https://github.com/Uroboric/pdf_parser_task/blob/9d9d06bccad9b4efa5423ea9185525d4a8358883/pdf_file/test_task.pdf") as pdf:
             return pdf.pages[0]
 
     def test_save_page_as_image(self, pdf_page, setup):
