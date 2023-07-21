@@ -26,8 +26,8 @@ pip install -r requirements.txt
 1.parser.py
 2.conftest.py
 3.test_parser.py
+``` 
 to the absolute path on your local machine
-```
 
 ### Run tests 
 ```
