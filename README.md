@@ -22,7 +22,7 @@ pip install -r requirements.txt
 2.conftest.py
 3.test_parser.py
 ``` 
-to the absolute path on your local machine
+to the absolute path of pdf file on your local machine.
 
 ### Run tests 
 ```
