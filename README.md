@@ -15,11 +15,6 @@ git clone https://github.com/Uroboric/pdf_parser_task.git
 ```
 pip install -r requirements.txt
 ```
-### Install dependencies
-```
-pip install -r requirements.txt
-```
-
 
 ### Changing the file path in 
 ```
