@@ -1,4 +1,5 @@
 # PDF Parser + Tests(Pytest)
+[![run_tests](https://github.com/Uroboric/pdf_parser_task/actions/workflows/run_tests.yaml/badge.svg?branch=gh-pages)](https://github.com/Uroboric/pdf_parser_task/actions/workflows/run_tests.yaml)
 <p align="center">
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--I3ObjKUU--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/82ljfvkp9q34w3uqhsx5.png" width="100%" height="auto" alt="Docker Logo">
 </p>
