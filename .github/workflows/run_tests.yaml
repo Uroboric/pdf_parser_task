@@ -46,7 +46,8 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: allure_results
+          allure_results: target/allure-results
+          gh_pages: gh-pages
           allure_history: allure_history
 
       - name: Deploy report to Github Pages
