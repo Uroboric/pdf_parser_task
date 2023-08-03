@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","0","tests","Elements","TestParser","","","Line Break insertion test",""
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","86","tests","Elements","TestParser","","","PDF Reading Test",""
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","46","tests","Elements","TestParser","","","Test for extracting and adding barcodes to PDF information",""
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","43","tests","Elements","TestParser","","","Barcode extraction test from PDF",""
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","167","tests","Elements","TestParser","","","Test for saving a PDF page to an image",""
+"passed","Thu Aug 03 21:09:40 GMT 2023","Thu Aug 03 21:09:40 GMT 2023","0","tests","Elements","TestParser","","","Test for parsing information from PDF",""
