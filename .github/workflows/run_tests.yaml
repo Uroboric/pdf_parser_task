@@ -29,7 +29,7 @@ jobs:
 
       - name: Run Test
         if: always()
-        run: python -m pytest --alluredir=/home/runner/work/pdf_parser_task/pdf_parser_task/tests/allure_results
+        run: python -m pytest --alluredir=tests/allure_results
         continue-on-error: true
 
       - name: Get Allure history
@@ -44,9 +44,9 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: target/allure-results
+          allure_results: tests/allure_results
           gh_pages: gh-pages
-          allure_history: allure_history
+          allure_history: tests/allure_history
 
       - name: Deploy report to Github Pages
         if: always()
@@ -54,4 +54,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure_history
+          PUBLISH_DIR: tests/allure_history
