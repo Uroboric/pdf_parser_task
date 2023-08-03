@@ -29,9 +29,7 @@ jobs:
 
       - name: Run Test
         if: always()
-        run: |
-          cd tests
-          pytest -s -vv --alluredir=allure_results .
+        run: python -m pytest --alluredir=/home/runner/work/pdf_parser_task/pdf_parser_task/tests/allure_results
         continue-on-error: true
 
       - name: Get Allure history
