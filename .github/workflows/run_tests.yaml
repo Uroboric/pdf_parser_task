@@ -1,7 +1,8 @@
 name: Run Tests
 
 on:
-  workflow_dispatch:
+  push:
+    branches: ["gh-pages"]
 
 jobs:
   test:
@@ -24,7 +25,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
+    - name: Run tests and generate Allure report
       run: |
         cd tests
-        pytest
+        pytest -s -vv --alluredir=allure_results .
+
+    - name: Upload Allure report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./tests/allure_results
