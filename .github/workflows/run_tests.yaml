@@ -35,7 +35,7 @@ jobs:
         continue-on-error: true
 
       - name: Get Allure history
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
@@ -46,8 +46,8 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: allure-results
-          allure_history: allure-history
+          allure_results: allure_results
+          allure_history: allure_history
 
       - name: Deploy report to Github Pages
         if: always()
@@ -55,4 +55,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          PUBLISH_DIR: allure_history
