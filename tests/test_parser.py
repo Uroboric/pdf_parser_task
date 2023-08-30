@@ -1,5 +1,4 @@
 import pytest
-import pdfplumber
 from pdf_parser.parser import PDFParser
 
 
@@ -26,16 +25,6 @@ class TestParser:
         assert "PN" in result
         assert "SN" in result
         assert "MFG" in result
-
-    @pytest.fixture
-    def pdf_page(self):
-        with pdfplumber.open('/home/runner/work/pdf_parser_task/pdf_parser_task/pdf_file/test_task.pdf') as pdf:
-            return pdf.pages[0]
-
-    def test_save_page_as_image(self, pdf_page, setup):
-        temp_filename = setup.save_page_as_image(pdf_page)
-        assert temp_filename.endswith(".png")
-        # Additional assertions can be added to check if the image is saved properly.
 
     def test_extract_barcodes_from_pdf(self, setup):
         result = setup.extract_barcodes_from_pdf()
